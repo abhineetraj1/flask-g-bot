@@ -1,0 +1,44 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100vh;
+}
+#vdo{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+#content{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	text-align: center;
+}
+#srch{
+	padding: 5px;
+	width: 400px;
+	margin-top: 200px;
+	background: white;
+	border-radius: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+#search{
+	border: none;
+	font-size: 20px;
+	margin-left: 5px;
+	width: 350px;
+	border-radius: 10px;
+}
+#search:focus{
+	outline:none;
+}
+#btn{
+	background: black;
+	border-radius: 200px;
+	padding: 5px;
+	border: solid;
+	border-color: black;
+}

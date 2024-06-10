@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>G-BOT</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="/static/index.css">
+	<link rel="shortcut icon" href="/static/favicon.png">
+</head>
+<body>
+
+<video src="/static/background.mp4" id="vdo" autoplay muted loop></video>
+
+<div id="content">
+	<center>
+		<form method="POST" action="/" id="srch">
+			<input type="text" name="search" id="search" placeholder="Enter prompt">
+			<button id="btn"><i class="material-icons" style="font-size:25px;color:white;">rocket_launch</i></button>
+		</form>
+	</center>
+</div>
+<script type="text/javascript" src="/static/index.js">
+	{% if err %}
+		alert("{{msg}}");
+	{% endif %}
+</script>
+</body>
+</html>
